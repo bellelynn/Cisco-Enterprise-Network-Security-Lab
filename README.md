@@ -30,7 +30,9 @@ The environment was built and tested in Cisco Packet Tracer.
 
 ## Network Topology
 
-The topology diagram and supporting screenshots will be added as the project documentation is expanded.
+![Network topology](topology/network-topology.png)
+
+The diagram shows the lab topology. Connectivity and security verification screenshots can be added separately.
 
 The simulated network contains Cisco routers, switches and an ASA firewall representing internal and external network segments.
 
@@ -286,40 +288,31 @@ This project strengthened my practical understanding of:
 
 The project also improved my ability to analyse network problems, identify configuration issues and apply appropriate security controls.
 
-## Planned Repository Structure
+## Repository Contents
 
-This initial version contains the README. The structure below is the planned layout for topology images, sanitised configurations, screenshots and troubleshooting notes.
+- [Network topology](topology/network-topology.png)
+- [R3 router configuration](configs/R3-running-config.txt)
+- [S2 switch configuration](configs/S2-running-config.txt)
+- [ASA1 firewall configuration](configs/ASA1-running-config.txt)
+- [Configuration notes](configs/README.md)
 
 ```text
-cisco-enterprise-network-security-lab/
-│
+Cisco-Enterprise-Network-Security-Lab/
 ├── README.md
-│
 ├── topology/
 │   └── network-topology.png
-│
-├── configs/
-│   ├── R3-running-config.txt
-│   ├── S1-running-config.txt
-│   ├── S2-running-config.txt
-│   └── ASA1-running-config.txt
-│
-├── screenshots/
-│   ├── topology-overview.png
-│   ├── connectivity-test.png
-│   ├── firewall-verification.png
-│   └── switch-security.png
-│
-└── troubleshooting/
-    ├── secure-remote-access.md
-    ├── firewall-policy.md
-    ├── switch-security.md
-    └── asa-connectivity.md
+└── configs/
+    ├── README.md
+    ├── R3-running-config.txt
+    ├── S2-running-config.txt
+    └── ASA1-running-config.txt
 ```
+
+The published configurations cover three devices, not every device shown in the topology. The wider lab scope described above is not fully evidenced by these three exports. Verification screenshots and detailed troubleshooting records can be added separately.
 
 ## Disclaimer
 
 This project was completed in a simulated academic lab environment using Cisco Packet Tracer.
 
-This README contains no credentials, usernames, student IDs or secret hashes. Configuration files and screenshots must be sanitised before they are added to the repository.
+The published text files are sanitised: account names, credentials, secret hashes, NTP authentication keys, device serial identifiers and learned MAC addresses have been replaced or removed. The domain name is a generic placeholder. Lab IP addresses and routing/security policies are retained to explain the topology. Replace redaction placeholders before using these exports in a lab.
 
